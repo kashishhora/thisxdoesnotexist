@@ -55,11 +55,8 @@ footer p {
 .embed-responsive .card-img-top {
   object-fit: cover;
 }
-
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: absolute;
-  overflow: hidden;
   bottom: 0px;
   height: 200px;
   left: 0px;
@@ -67,11 +64,11 @@ footer p {
 }
 @media (min-width: 768px) {
   .icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    position: absolute;
+    bottom: 0px;
+    height: 200px;
+    left: 0px;
+    right: 0px;
   }
 }
 
