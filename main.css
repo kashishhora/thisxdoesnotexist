@@ -53,16 +53,26 @@ footer p {
 }
 
 .embed-responsive .card-img-top {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  position: absolute;
+  overflow: hidden;
+  bottom: 0px;
+  height: 200px;
+  left: 0px;
+  right: 0px;
+}
+@media (min-width: 768px) {
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
 
 /* Style the icon bar links */
@@ -103,4 +113,9 @@ footer p {
 .youtube {
   background: #bb0000;
   color: white;
+}
+
+#X {
+  color: #2980b9;
+  font-weight: 400;
 }
