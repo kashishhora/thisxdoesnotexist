@@ -248,6 +248,33 @@
                 </div>
               </a>
             </div>
+            <div class="col-md-4 mb-4">
+              <a
+                href="https://thisresumedoesnotexist.com/"
+                class="card mb-4 box-shadow h-100"
+              >
+                <div class="embed-responsive embed-responsive-16by9">
+                  <img
+                    class="card-img-top embed-responsive-item"
+                    src="img/thisresumedoesnotexist.png"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5>This Resume Does Not Exist</h5>
+                  <p class="card-text">
+                    To showcase their resume template builder, this company went
+                    as far as to incorporate TextgenRNN – not quite a GAN but
+                    rather a recurrent neural network (RNN) specializing in text
+                    generation. Bonus points – the headshots used in each
+                    resume are from thispersondoesnotexist.com.
+                  </p>
+                </div>
+                <div class="card-footer text-muted">
+                  Created by Enhancv.
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -286,17 +313,18 @@
       var text = [
         "Person",
         "Cat",
-        "Airbnb",
+        "Rental",
         "Waifu",
         "URL",
         "Startup",
         "Question",
+        "Resume",
         "X",
         "X"
       ];
       var counter = 0;
       var elem = document.getElementById("X");
-      var inst = setInterval(change, 2000);
+      var inst = setInterval(change, 1500);
 
       function change() {
         elem.innerHTML = text[counter];
