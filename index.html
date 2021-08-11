@@ -1260,6 +1260,42 @@
 								</div>
 							</a>
 						</div>
+						<div class="col-md-4 mb-4">
+							<a
+								href="https://thisideadoesnotexist.com/"
+								class="card mb-4 box-shadow h-100"
+							>
+								<div
+									class="
+										embed-responsive embed-responsive-16by9
+									"
+								>
+									<img
+										class="
+											card-img-top
+											embed-responsive-item
+										"
+										src="img/thisideadoesnotexist.jpg"
+										alt="Card image cap"
+									/>
+								</div>
+								<div class="card-body">
+									<h5>This Idea Does Not Exist</h5>
+									<p class="card-text">
+										Looking for a fun, new side-project?
+										Look no further than this new site that
+										recommends groundbreaking new ideas for
+										companies or open-source projects. It's
+										an I'm Feeling Lucky for how to spend an
+										exotic weekend with some wine and your
+										favorite IDE.
+									</p>
+								</div>
+								<div class="card-footer text-muted">
+									Created by Andrew Cantino.
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1330,12 +1366,13 @@
 				'Music Video',
 				'Beach',
 				'Map',
+				'Idea',
 				'X',
 				'X',
 			];
 			var counter = 0;
 			var elem = document.getElementById('X');
-			var inst = setInterval(change, 1500);
+			var inst = setInterval(change, 1000);
 
 			function change() {
 				elem.innerHTML = text[counter];
